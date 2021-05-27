@@ -15,7 +15,7 @@ namespace TempoPassado.ConsoleApp
             string tempoPassado = "";
 
             if (data > dataPassada)
-                tempoPassado = "Data inválida, não é possível datas futuas!";
+                tempoPassado = "Data inválida, não é possível datas futuras!";
             else
             {
                 Converte a = new Converte();
