@@ -103,6 +103,15 @@ namespace Testes
             DataBase DataBase = new DataBase();
 
             Assert.AreEqual("duas semanas atrás", DataBase.PegaData(data));
-        }    
+        }
+
+        [TestMethod]
+        public void DeveRetornarDuasSemanasAtrasEDoisDias()
+        {
+            DateTime data = new DateTime(2021, 05, 10, 18, 00, 00);
+            DataBase DataBase = new DataBase();
+
+            Assert.AreEqual("duas semanas e dois dias atrás", DataBase.PegaData(data));
+        }
     }
 }
